@@ -1,0 +1,74 @@
+
+<html>
+<head>
+<title>
+PirSensor
+</title>
+<style>
+body{
+background-image: url("https://images.designtrends.com/wp-content/uploads/2015/11/06163757/plain-Backgrounds1.jpg");
+background-repeat: no-repeat;
+background-size:100%;
+}
+#h10h{
+font-family:Times New Roman;
+font-size:100px;
+color:Darker Indigo;
+margin-top:50px;
+text-align:center;
+}
+#myImg{
+width:450px;
+height:250px;
+margin-left:150px;
+margin-top:50px;
+border: 2px solid white;
+}
+#demo{
+font-family: Consolas;
+color:#3C6478;
+font-size:100px;
+margin-right:300px;
+margin-top:50px;
+text-align:right;
+}
+div.main p{
+float:right;
+}
+</style>
+</head>
+<body>
+<h1 id="h10h">
+<b>BURGLAR DETECTION</b>
+</h1>
+<div class="main">
+<img id="myImg" src="https://media.giphy.com/media/l3mZliqXpqkVkkQYE/giphy.gif">
+<p id="demo"></p>
+</div>
+<script>
+function m1(data1)
+{
+var image;
+if(data1==1)
+{
+image= "https://cdn.dribbble.com/users/1163294/screenshots/3296560/im-blue.gif";
+}
+else
+{
+image= "https://media.giphy.com/media/l3mZliqXpqkVkkQYE/giphy.gif";
+}
+return image;
+}
+var data=1;
+document.getElementById("myImg").src = m1(0);
+if(0==1)
+{
+document.getElementById("demo").innerHTML = "Motion Detected";
+}
+else
+{
+document.getElementById("demo").innerHTML = "No Motion";
+}
+</script>
+</body>
+</html>
